@@ -6,8 +6,8 @@ Here’s a comprehensive guide on **Linear Regression**—covering theory, appli
 
    - **Definition**: Linear regression is a supervised learning algorithm that models the relationship between a dependent variable (Y) and one or more independent variables (X) using a linear equation.
    - **Equation**:
-     - **Simple Linear Regression**: \( Y = b_0 + b_1 X + \epsilon \)
-     - **Multiple Linear Regression**: \( Y = b_0 + b_1 X_1 + b_2 X_2 + \dots + b_n X_n + \epsilon \)
+     - **Simple Linear Regression**: $( Y = b_0 + b_1 X + \epsilon \)$
+     - **Multiple Linear Regression**: $( Y = b_0 + b_1 X_1 + b_2 X_2 + \dots + b_n X_n + \epsilon \)$
    - **Objective**: Minimize the difference between predicted and actual values by minimizing the **sum of squared errors (SSE)**.
    - **Assumptions**:
      - Linearity: The relationship between independent and dependent variables is linear.
@@ -17,12 +17,12 @@ Here’s a comprehensive guide on **Linear Regression**—covering theory, appli
      - No multicollinearity (in multiple regression): Independent variables should not be highly correlated.
 
 ### 2. **Parameter Estimation**
-   - **Ordinary Least Squares (OLS)**: A method to estimate coefficients \( b_0, b_1, \dots, b_n \) by minimizing the sum of squared residuals.
+   - **Ordinary Least Squares (OLS)**: A method to estimate coefficients $( b_0, b_1, \dots, b_n \)$ by minimizing the sum of squared residuals.
    - **Gradient Descent**: An iterative approach to finding the optimal coefficients, often used when data size is large.
 
 ### 3. **Interpretation of Coefficients**
    - **Intercept (b_0)**: Expected value of Y when all Xs are zero.
-   - **Slope (b_i)**: Change in Y for a one-unit change in \( X_i \), holding other variables constant.
+   - **Slope (b_i)**: Change in Y for a one-unit change in $( X_i \)$, holding other variables constant.
    - **Significance**: p-values and confidence intervals help in determining if coefficients are statistically significant.
 
 ### 4. **Evaluation Metrics**
@@ -94,7 +94,7 @@ print(f"Mean Squared Error: {mse}, R-squared: {r2}")
 ### 11. **Types of Linear Regression Models**
    - **Simple Linear Regression**: One independent variable.
    - **Multiple Linear Regression**: Multiple independent variables.
-   - **Polynomial Regression**: Extension of linear regression for non-linear data; includes higher degree terms (e.g., \( X^2, X^3 \)).
+   - **Polynomial Regression**: Extension of linear regression for non-linear data; includes higher degree terms (e.g., $( X^2, X^3 \)$).
    - **Ridge Regression**: Adds L2 regularization to linear regression to prevent overfitting.
    - **Lasso Regression**: Adds L1 regularization, useful for feature selection by shrinking some coefficients to zero.
 
@@ -108,8 +108,8 @@ print(f"Mean Squared Error: {mse}, R-squared: {r2}")
    - **Mini-Batch Gradient Descent**: Uses a subset of samples per iteration, balancing speed and stability.
 
 ### 14. **Regularization Terms in Cost Function**
-   - **Ridge (L2)**: Adds \( \lambda \sum b_i^2 \) to the cost function to reduce large coefficients.
-   - **Lasso (L1)**: Adds \( \lambda \sum |b_i| \) to perform both shrinkage and feature selection.
+   - **Ridge (L2)**: Adds $( \lambda \sum b_i^2 \)$ to the cost function to reduce large coefficients.
+   - **Lasso (L1)**: Adds $( \lambda \sum |b_i| \)$ to perform both shrinkage and feature selection.
    - **Elastic Net**: Combines L1 and L2 penalties, allowing for a balance between feature selection (L1) and coefficient shrinkage (L2).
 
 ### 15. **Diagnosing the Model: Residual Analysis**
