@@ -43,7 +43,7 @@ Certainly! Here’s a complete guide to **Logistic Regression**—covering every
 
 ### 5. **Interpretation of Coefficients**
    - **Odds Ratio**: Each coefficient represents the change in the log-odds of the outcome for a one-unit increase in the predictor.
-     - \( e^{b_i} \) gives the odds ratio, indicating how much the odds of the outcome change with each unit increase in the predictor.
+     - $( e^{b_i} \)$ gives the odds ratio, indicating how much the odds of the outcome change with each unit increase in the predictor.
    - **Significance**: p-values for each coefficient help determine if predictors are statistically significant.
 
 ### 6. **Real-Life Applications**
@@ -102,8 +102,8 @@ print(f"Accuracy: {accuracy}, AUC: {roc_auc}")
    - **Solutions**: Remove highly correlated predictors, use PCA to reduce dimensionality, or add regularization.
 
 ### 12. **Regularization Techniques**
-   - **L2 Regularization (Ridge)**: Adds a penalty term \( \lambda \sum b_i^2 \) to prevent large coefficients, helping reduce overfitting.
-   - **L1 Regularization (Lasso)**: Adds a penalty term \( \lambda \sum |b_i| \) to promote sparse coefficients, effectively selecting features.
+   - **L2 Regularization (Ridge)**: Adds a penalty term $( \lambda \sum b_i^2 \)$ to prevent large coefficients, helping reduce overfitting.
+   - **L1 Regularization (Lasso)**: Adds a penalty term $( \lambda \sum |b_i| \)$ to promote sparse coefficients, effectively selecting features.
    - **Elastic Net**: Combination of L1 and L2 regularization, balancing feature selection and coefficient shrinkage.
 
 ### 13. **Advanced Techniques**
