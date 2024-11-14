@@ -6,9 +6,9 @@ Certainly! Here’s a complete guide to **Logistic Regression**—covering every
 
    - **Definition**: Logistic regression is a supervised classification algorithm used to predict a binary outcome (0 or 1, yes or no) based on one or more predictor variables.
    - **Equation**: The model predicts the probability \( P(Y=1) \) using the logistic function:
-     \
+     
      $P(Y=1|X) = \frac{1}{1 + e^{-(b_0 + b_1X_1 + b_2X_2 + \dots + b_nX_n)}}$
-     \
+     
    - **Logistic (Sigmoid) Function**: S-shaped curve mapping any real-valued number to a value between 0 and 1:
      
      $sigma(z) = \frac{1}{1 + e^{-z}}$
@@ -35,8 +35,8 @@ Certainly! Here’s a complete guide to **Logistic Regression**—covering every
 ### 4. **Evaluation Metrics**
    - **Accuracy**: Proportion of correct predictions (both true positives and true negatives).
    - **Precision, Recall, and F1-Score**:
-     - **Precision**: \( \text{TP} / (\text{TP} + \text{FP}) \)
-     - **Recall**: \( \text{TP} / (\text{TP} + \text{FN}) \)
+     - **Precision**: $( \text{TP} / (\text{TP} + \text{FP}) \)$
+     - **Recall**: $( \text{TP} / (\text{TP} + \text{FN}) \)$
      - **F1-Score**: Harmonic mean of precision and recall.
    - **ROC-AUC Curve**: Receiver Operating Characteristic curve, plotting true positive rate vs. false positive rate. AUC (Area Under Curve) measures the overall performance.
    - **Log Loss**: Measures the performance by calculating the difference between actual and predicted probabilities.
