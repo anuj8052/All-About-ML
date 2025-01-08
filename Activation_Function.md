@@ -68,21 +68,21 @@ Activation functions play a crucial role in neural networks by introducing non-l
 - **Example**:
   - In image processing, ReLU helps preserve positive pixel values while suppressing noise (negative values).  
   - If \(x = -3\):  
-    \[
-    f(-3) = \max(0, -3) = 0
-    \]
+    
+    $f(-3) = \max(0, -3) = 0$
+    
 
 ---
 
 ### **4. Leaky ReLU**
 - **Formula**:  
-  \[
-  f(x) = 
+  
+  $f(x) = 
   \begin{cases} 
   x & \text{if } x > 0 \\
   \alpha x & \text{if } x \leq 0
-  \end{cases}
-  \]
+  \end{cases}$
+  
   (where \(\alpha\) is a small constant, e.g., 0.01)
 - **Range**: (-∞, ∞)  
 - **Explanation**:
@@ -93,22 +93,22 @@ Activation functions play a crucial role in neural networks by introducing non-l
   - Choice of \(\alpha\) affects performance and may require tuning.
 - **Example**:
   - If \(x = -3\) and \(\alpha = 0.01\):  
-    \[
-    f(-3) = 0.01 \cdot (-3) = -0.03
-    \]  
+    
+    $f(-3) = 0.01 \cdot (-3) = -0.03$
+      
     This small gradient helps the model learn from negative inputs.
 
 ---
 
 ### **5. Parametric ReLU (PReLU)**
 - **Formula**:  
-  \[
-  f(x) = 
+  
+  $f(x) = 
   \begin{cases} 
   x & \text{if } x > 0 \\
   \alpha x & \text{if } x \leq 0
-  \end{cases}
-  \]
+  \end{cases}$
+  
   (\(\alpha\) is learned during training)
 - **Range**: (-∞, ∞)  
 - **Explanation**:
@@ -119,17 +119,17 @@ Activation functions play a crucial role in neural networks by introducing non-l
   - May lead to overfitting for small datasets.
 - **Example**:
   - If \(x = -2\) and the learned \(\alpha = 0.05\):  
-    \[
-    f(-2) = 0.05 \cdot (-2) = -0.1
-    \]
+    
+    $f(-2) = 0.05 \cdot (-2) = -0.1$
+    
 
 ---
 
 ### **6. Softmax**
 - **Formula**:  
-  \[
-  \text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^N e^{x_j}}
-  \]
+  
+  $text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^N e^{x_j}}$
+  
 - **Range**: (0, 1), with all outputs summing to 1.  
 - **Explanation**:
   - Converts logits into probabilities for multi-class classification problems.
@@ -139,18 +139,18 @@ Activation functions play a crucial role in neural networks by introducing non-l
   - Sensitive to outliers in logits.
 - **Example**:
   - For class scores [2, 1, 0]:  
-    \[
-    \text{Softmax}(2) = \frac{e^2}{e^2 + e^1 + e^0} \approx 0.71
-    \]  
+    
+    $text{Softmax}(2) = \frac{e^2}{e^2 + e^1 + e^0} \approx 0.71$
+      
     Class 1 has a 71% probability of being the correct class.
 
 ---
 
 ### **7. Swish**
 - **Formula**:  
-  \[
-  f(x) = x \cdot \sigma(x) = x \cdot \frac{1}{1 + e^{-x}}
-  \]
+  
+  $f(x) = x \cdot \sigma(x) = x \cdot \frac{1}{1 + e^{-x}}$
+  
 - **Range**: (-∞, ∞)  
 - **Explanation**:
   - A smooth, non-monotonic function that performs better than ReLU in some cases.
@@ -160,21 +160,21 @@ Activation functions play a crucial role in neural networks by introducing non-l
   - Computationally more expensive.
 - **Example**:
   - If \(x = 2\):  
-    \[
-    f(2) = 2 \cdot \frac{1}{1 + e^{-2}} \approx 1.76
-    \]
+    
+    $f(2) = 2 \cdot \frac{1}{1 + e^{-2}} \approx 1.76$
+    
 
 ---
 
 ### **8. ELU (Exponential Linear Unit)**
 - **Formula**:  
-  \[
-  f(x) = 
+  
+  $f(x) = 
   \begin{cases} 
   x & \text{if } x > 0 \\
   \alpha(e^x - 1) & \text{if } x \leq 0
-  \end{cases}
-  \]
+  \end{cases}$
+  
   (\(\alpha\) is a hyperparameter, usually set to 1)
 - **Range**: (-\(\alpha\), ∞)  
 - **Explanation**:
@@ -184,10 +184,10 @@ Activation functions play a crucial role in neural networks by introducing non-l
 - **Disadvantages**:
   - Computationally more expensive than ReLU.
 - **Example**:
-  - If \(x = -1\) and \(\alpha = 1\):  
-    \[
-    f(-1) = 1(e^{-1} - 1) \approx -0.63
-    \]
+  - If $(x = -1\) and \(\alpha = 1\)$:  
+    
+    $f(-1) = 1(e^{-1} - 1) \approx -0.63$
+    
 
 ---
 
