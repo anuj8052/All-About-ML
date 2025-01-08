@@ -133,7 +133,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **11. R-Squared (Coefficient of Determination)**
 - **Definition**: Measures the proportion of variance in the dependent variable explained by the independent variables.  
   
-  $R^2 = 1 - \frac{\text{SS}_{\text{residual}}}{\text{SS}_{\text{total}}}$
+  R^2 = 1 - \frac{\text{SS}_{\text{residual}}}{\text{SS}_{\text{total}}}
   
 - **Purpose**: Indicates how well the model fits the data.
 - **Strengths**:
