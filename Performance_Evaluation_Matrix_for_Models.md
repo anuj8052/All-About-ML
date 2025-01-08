@@ -6,9 +6,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **1. Accuracy**
 - **Definition**: The ratio of correctly predicted observations to the total observations.  
-  \[
-  \text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)}}{\text{Total Observations}}
-  \]
+  
+  $text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)}}{\text{Total Observations}}$
+ 
 - **Strengths**:
   - Simple and intuitive for balanced datasets.
 - **Limitations**:
