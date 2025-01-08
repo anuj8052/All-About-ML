@@ -83,16 +83,16 @@ Activation functions play a crucial role in neural networks by introducing non-l
   \alpha x & \text{if } x \leq 0
   \end{cases}$
   
-  (where \(\alpha\) is a small constant, e.g., 0.01)
+  (where $(\alpha\)$ is a small constant, e.g., 0.01)
 - **Range**: (-∞, ∞)  
 - **Explanation**:
   - A modified version of ReLU that allows a small, non-zero gradient for negative inputs.
 - **Advantages**:
   - Solves the dead neuron problem in ReLU.
 - **Disadvantages**:
-  - Choice of \(\alpha\) affects performance and may require tuning.
+  - Choice of $(\alpha\)$ affects performance and may require tuning.
 - **Example**:
-  - If \(x = -3\) and \(\alpha = 0.01\):  
+  - If \(x = -3\) and $(\alpha = 0.01\)$:  
     
     $f(-3) = 0.01 \cdot (-3) = -0.03$
       
@@ -103,11 +103,7 @@ Activation functions play a crucial role in neural networks by introducing non-l
 ### **5. Parametric ReLU (PReLU)**
 - **Formula**:  
   
-  $f(x) = 
-  \begin{cases} 
-  x & \text{if } x > 0 \\
-  \alpha x & \text{if } x \leq 0
-  \end{cases}$
+  $f(x) = \begin{cases} x & \text{if } x > 0 \\\alpha x & \text{if } x \leq 0\end{cases}$
   
   (\(\alpha\) is learned during training)
 - **Range**: (-∞, ∞)  
@@ -118,7 +114,7 @@ Activation functions play a crucial role in neural networks by introducing non-l
 - **Disadvantages**:
   - May lead to overfitting for small datasets.
 - **Example**:
-  - If \(x = -2\) and the learned \(\alpha = 0.05\):  
+  - If \(x = -2\) and the learned $(\alpha = 0.05\)$:  
     
     $f(-2) = 0.05 \cdot (-2) = -0.1$
     
@@ -128,7 +124,7 @@ Activation functions play a crucial role in neural networks by introducing non-l
 ### **6. Softmax**
 - **Formula**:  
   
-  $text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^N e^{x_j}}$
+  ${Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^N e^{x_j}}$
   
 - **Range**: (0, 1), with all outputs summing to 1.  
 - **Explanation**:
@@ -140,7 +136,7 @@ Activation functions play a crucial role in neural networks by introducing non-l
 - **Example**:
   - For class scores [2, 1, 0]:  
     
-    $text{Softmax}(2) = \frac{e^2}{e^2 + e^1 + e^0} \approx 0.71$
+    ${Softmax}(2) = \frac{e^2}{e^2 + e^1 + e^0} \approx 0.71$
       
     Class 1 has a 71% probability of being the correct class.
 
@@ -184,7 +180,7 @@ Activation functions play a crucial role in neural networks by introducing non-l
 - **Disadvantages**:
   - Computationally more expensive than ReLU.
 - **Example**:
-  - If $(x = -1\) and \(\alpha = 1\)$:  
+  - If $(x = -1\) and $(\alpha = 1\)$:  
     
     $f(-1) = 1(e^{-1} - 1) \approx -0.63$
     
