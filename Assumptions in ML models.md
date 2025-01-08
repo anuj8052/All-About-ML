@@ -1,5 +1,4 @@
 
-
 Here are some general assumptions made by various machine learning models:
 
 ### 1. **Linear Regression Assumptions:**
