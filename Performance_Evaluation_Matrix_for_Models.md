@@ -157,4 +157,21 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 4. **Relate to Business Implications**:
    - Example: High recall in fraud detection ensures catching most frauds, but precision prevents wasting resources.
 
-Would you like tailored examples for specific applications, like fraud detection, healthcare, or marketing campaigns?
+
+### Metrics in Context: 
+
+1. **Imbalanced Datasets**  
+   - **Why Avoid Accuracy?**  
+     Accuracy can be misleading for imbalanced datasets since it may favor the majority class, ignoring minority-class performance.
+   - **Preferred Metrics:**  
+     - **Precision**: Measures how many predicted positives are actual positives (reduces false positives).  
+     - **Recall**: Measures how many actual positives are identified (reduces false negatives).  
+     - **F1 Score**: Harmonic mean of precision and recall, balancing both when the dataset is imbalanced.  
+
+2. **Regression Metrics**  
+   - **MAE (Mean Absolute Error)**: Measures average absolute differences, interpretable in the original units. Preferred when errors should be equally weighted.  
+   - **RMSE (Root Mean Square Error)**: Penalizes larger errors due to squaring. Suitable when larger errors are more critical.  
+
+### **Key Takeaway:**  
+Metrics should align with the problem context, focusing on what matters most: balanced evaluation for classification (e.g., F1 for imbalance) or sensitivity to error magnitude for regression (MAE vs. RMSE).
+
