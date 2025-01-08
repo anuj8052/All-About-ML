@@ -3,7 +3,7 @@ Decision trees are a widely used algorithm in machine learning and statistics fo
 ---
 
 ## **What is a Decision Tree?**
-A decision tree is a flowchart-like structure in which:
+A decision tree is a supervised machine learning algorithm, used in regression and classification tasks. It is a flowchart-like structure in which:
 - Each **internal node** represents a decision based on a feature.
 - Each **branch** represents the outcome of a decision.
 - Each **leaf node** represents a class label (for classification) or a value (for regression).
