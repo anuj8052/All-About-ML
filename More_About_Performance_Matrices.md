@@ -64,7 +64,7 @@ Used for predicting continuous values (e.g., house prices, stock prices).
   *Use*: For interpretability in the original scale.
 
 - **R² Score (Coefficient of Determination)**:  
-   $R² = 1 - \frac{\text{SS}_\text{res}}{\text{SS}_\text{tot}}$
+    $R² = 1 - \frac{\${SS}_\${res}}{\${SS}_\${tot}$}$
   *Example*: Evaluating a stock price prediction model, R² explains how much of the variance in prices is captured by the model.  
   *Use*: To measure the proportion of variance explained.
 
