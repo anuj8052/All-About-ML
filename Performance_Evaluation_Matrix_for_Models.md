@@ -7,7 +7,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **1. Accuracy**
 - **Definition**: The ratio of correctly predicted observations to the total observations.  
   
-  $text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)}}{\text{Total Observations}}$
+  $\text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)}}{\text{Total Observations}}$
  
 - **Strengths**:
   - Simple and intuitive for balanced datasets.
@@ -21,7 +21,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **2. Precision**
 - **Definition**: The ratio of correctly predicted positive observations to the total predicted positives.  
   
-  $text{Precision} = \frac{\text{TP}}{\text{TP} + \text{False Positives (FP)}}$
+  $\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{False Positives (FP)}}$
   
 - **Purpose**: Measures how many of the predicted positives are actual positives.
 - **Strengths**:
@@ -34,7 +34,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **3. Recall (Sensitivity or True Positive Rate)**
 - **Definition**: The ratio of correctly predicted positive observations to all actual positives.  
   
-  $text{Recall} = \frac{\text{TP}}{\text{TP} + \text{False Negatives (FN)}}$
+  $\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{False Negatives (FN)}}$
   
 - **Purpose**: Measures how well the model captures all positive cases.
 - **Strengths**:
@@ -60,7 +60,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **5. Specificity (True Negative Rate)**
 - **Definition**: The ratio of correctly predicted negative observations to all actual negatives.  
   
-  $text{Specificity} = \frac{\text{TN}}{\text{TN} + \text{FP}}$
+  $\text{Specificity} = \frac{\text{TN}}{\text{TN} + \text{FP}}$
   
 - **Purpose**: Measures the model’s ability to identify negative cases.
 - **Strengths**:
@@ -83,7 +83,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **7. Log Loss (Logarithmic Loss)**
 - **Definition**: Penalizes the model for incorrect predictions by assigning higher penalties for confident wrong predictions.
   
-  $text{Log Loss} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i) \right]$
+  $\text{Log Loss} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i) \right]$
   
 - **Purpose**: Measures the uncertainty of predictions, focusing on probability estimates.
 - **Strengths**:
@@ -96,7 +96,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **8. Mean Absolute Error (MAE)**
 - **Definition**: The average absolute difference between actual and predicted values.
   
-  $text{MAE} = \frac{\sum_{i=1}^N |y_i - \hat{y}_i|}{N}$
+  $\text{MAE} = \frac{\sum_{i=1}^N |y_i - \hat{y}_i|}{N}$
 
 - **Purpose**: Evaluates regression models by measuring prediction errors in the same units as the target.
 - **Strengths**:
@@ -109,7 +109,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **9. Mean Squared Error (MSE)**
 - **Definition**: The average squared difference between actual and predicted values.  
   
-  $text{MSE} = \frac{\sum_{i=1}^N (y_i - \hat{y}_i)^2}{N}$
+  $\text{MSE} = \frac{\sum_{i=1}^N (y_i - \hat{y}_i)^2}{N}$
   
 - **Purpose**: Penalizes large errors more than small ones.
 - **Strengths**:
@@ -122,7 +122,7 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 #### **10. Root Mean Squared Error (RMSE)**
 - **Definition**: The square root of MSE, providing error in the same units as the target variable.  
   
-  $text{RMSE} = \sqrt{\text{MSE}}$
+  $\text{RMSE} = \sqrt{\text{MSE}}$
   
 - **Purpose**: Simplifies interpretation of MSE.
 - **Example**:
