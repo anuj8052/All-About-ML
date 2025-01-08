@@ -20,9 +20,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **2. Precision**
 - **Definition**: The ratio of correctly predicted positive observations to the total predicted positives.  
-  \[
-  \text{Precision} = \frac{\text{TP}}{\text{TP} + \text{False Positives (FP)}}
-  \]
+  
+  $text{Precision} = \frac{\text{TP}}{\text{TP} + \text{False Positives (FP)}}$
+  
 - **Purpose**: Measures how many of the predicted positives are actual positives.
 - **Strengths**:
   - Important when the cost of false positives is high (e.g., spam email detection).
@@ -33,9 +33,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **3. Recall (Sensitivity or True Positive Rate)**
 - **Definition**: The ratio of correctly predicted positive observations to all actual positives.  
-  \[
-  \text{Recall} = \frac{\text{TP}}{\text{TP} + \text{False Negatives (FN)}}
-  \]
+  
+  $text{Recall} = \frac{\text{TP}}{\text{TP} + \text{False Negatives (FN)}}$
+  
 - **Purpose**: Measures how well the model captures all positive cases.
 - **Strengths**:
   - Crucial when missing a positive case is costly (e.g., diagnosing cancer).
@@ -46,9 +46,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **4. F1 Score**
 - **Definition**: The harmonic mean of precision and recall.  
-  \[
-  F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
-  \]
+  
+  $F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$
+ 
 - **Purpose**: Balances precision and recall, especially for imbalanced datasets.
 - **Strengths**:
   - Useful when both false positives and false negatives carry significant costs.
@@ -59,9 +59,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **5. Specificity (True Negative Rate)**
 - **Definition**: The ratio of correctly predicted negative observations to all actual negatives.  
-  \[
-  \text{Specificity} = \frac{\text{TN}}{\text{TN} + \text{FP}}
-  \]
+  
+  $text{Specificity} = \frac{\text{TN}}{\text{TN} + \text{FP}}$
+  
 - **Purpose**: Measures the model’s ability to identify negative cases.
 - **Strengths**:
   - Useful when false positives need to be minimized (e.g., legal or regulatory decisions).
@@ -82,9 +82,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **7. Log Loss (Logarithmic Loss)**
 - **Definition**: Penalizes the model for incorrect predictions by assigning higher penalties for confident wrong predictions.
-  \[
-  \text{Log Loss} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i) \right]
-  \]
+  
+  $text{Log Loss} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i) \right]$
+  
 - **Purpose**: Measures the uncertainty of predictions, focusing on probability estimates.
 - **Strengths**:
   - Captures confidence in predictions.
@@ -94,10 +94,10 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 ---
 
 #### **8. Mean Absolute Error (MAE)**
-- **Definition**: The average absolute difference between actual and predicted values.  
-  \[
-  \text{MAE} = \frac{\sum_{i=1}^N |y_i - \hat{y}_i|}{N}
-  \]
+- **Definition**: The average absolute difference between actual and predicted values.
+  
+  $text{MAE} = \frac{\sum_{i=1}^N |y_i - \hat{y}_i|}{N}$
+
 - **Purpose**: Evaluates regression models by measuring prediction errors in the same units as the target.
 - **Strengths**:
   - Easy to interpret.
@@ -108,9 +108,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **9. Mean Squared Error (MSE)**
 - **Definition**: The average squared difference between actual and predicted values.  
-  \[
-  \text{MSE} = \frac{\sum_{i=1}^N (y_i - \hat{y}_i)^2}{N}
-  \]
+  
+  $text{MSE} = \frac{\sum_{i=1}^N (y_i - \hat{y}_i)^2}{N}$
+  
 - **Purpose**: Penalizes large errors more than small ones.
 - **Strengths**:
   - Highlights significant prediction errors.
@@ -121,9 +121,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **10. Root Mean Squared Error (RMSE)**
 - **Definition**: The square root of MSE, providing error in the same units as the target variable.  
-  \[
-  \text{RMSE} = \sqrt{\text{MSE}}
-  \]
+  
+  $text{RMSE} = \sqrt{\text{MSE}}$
+  
 - **Purpose**: Simplifies interpretation of MSE.
 - **Example**:
   - Predicting weather temperatures: RMSE gives error in degrees.
@@ -132,9 +132,9 @@ Performance evaluation metrics are crucial for assessing the effectiveness of mo
 
 #### **11. R-Squared (Coefficient of Determination)**
 - **Definition**: Measures the proportion of variance in the dependent variable explained by the independent variables.  
-  \[
-  R^2 = 1 - \frac{\text{SS}_{\text{residual}}}{\text{SS}_{\text{total}}}
-  \]
+  
+  $R^2 = 1 - \frac{\text{SS}_{\text{residual}}}{\text{SS}_{\text{total}}}$
+  
 - **Purpose**: Indicates how well the model fits the data.
 - **Strengths**:
   - High \(R^2\) suggests a good fit.
