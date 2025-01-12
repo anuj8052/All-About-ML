@@ -68,13 +68,13 @@
 
 Both algorithms are powerful, and the choice between them depends on your dataset, problem complexity, and performance requirements.
 
-#What is the confusion matrix?
-A confusion matrix is a table used to evaluate the performance of a classification model.
-It shows the true positives, true negatives, false positives, and false negatives, helping you see how well your model distinguishes between classes.
+### 9. **What is the confusion matrix?**
+   - A confusion matrix is a table used to evaluate the performance of a classification model.
+   - It shows the true positives, true negatives, false positives, and false negatives, helping you see how well your model distinguishes between classes.
 
-#Baggin
-#Bagging and boosting are both ensemble methods in machine learning.
-Bagging: - Stands for "Bootstrap Aggregating".
+### 10. **Bagging**
+- Bagging and boosting are both ensemble methods in machine learning.
+- Bagging: - Stands for "Bootstrap Aggregating".
 - Focuses on reducing variance.
 - Takes multiple samples from the dataset with replacement.
 - Trains a model on each sample independently.
@@ -82,7 +82,7 @@ Bagging: - Stands for "Bootstrap Aggregating".
 - Take mejority vote in classification problems
 - Example: Random Forests.
   
-#Boosting in ensemble methods
+### 11. *** Boosting in ensemble methods ***
 - Boosting: - Focuses on reducing bias.
 - Trains models sequentially.
 - Each model learns from the errors of the previous one.
