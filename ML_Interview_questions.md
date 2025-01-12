@@ -82,11 +82,15 @@ Both algorithms are powerful, and the choice between them depends on your datase
 - Take mejority vote in classification problems
 - Example: Random Forests.
   
-### 11. *** Boosting in ensemble methods ***
+### 11. **Boosting in ensemble methods** 
 - Boosting: - Focuses on reducing bias.
 - Trains models sequentially.
 - Each model learns from the errors of the previous one.
 - Boosted models are weightedly averaged.
 - Example: AdaBoost and Gradient Boosting.
 
-
+### 12. **Bias-Variance Trafe-off**
+- Bias: Error introduced when model simplifies the target function.. High bias can lead to underfitting.. 
+- Variance: Error introduced when model is sensitive to small fluctuations.. High variance can lead to overfitting..
+- Tradeoff: Balancing bias and variance to achieve optimal model performance.. The goal is to have low bias and low variance,
+- though it's a tricky balance.. Too much focus on bias might miss nuances.. Too much focus on variance might overfit.. Model tweaks are ---- needed to hit ...
