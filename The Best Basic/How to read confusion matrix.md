@@ -38,20 +38,20 @@ Using values **TP, TN, FP, FN**, we calculate:
 
 #### ✅ **Accuracy** (Overall correctness)
 
-$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}%
+${Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}%
 
 **Good for balanced datasets.**  
 **Issue:** Can be misleading for imbalanced data.
 
 #### 🎯 **Precision** (How many predicted **positives** are actually correct?)
 
-$\text{Precision} = \frac{TP}{TP + FP}$
+${Precision} = \frac{TP}{TP + FP}$
 
 **High precision** means fewer **false positives** (important in fraud detection).
 
 #### 🔍 **Recall (Sensitivity)** (How many actual **positives** were detected?)
 
-$\text{Recall} = \frac{TP}{TP + FN}$
+${Recall} = \frac{TP}{TP + FN}$
 
 **High recall** means fewer **false negatives** (important in medical diagnosis).
 
@@ -63,7 +63,7 @@ $\text{F1-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{P
 
 #### 📈 **Specificity (True Negative Rate)**
 
-$\text{Specificity} = \frac{TN}{TN + FP}$
+${Specificity} = \frac{TN}{TN + FP}$
 
 Measures how well the model avoids **false positives**.
 
