@@ -8,9 +8,9 @@ The term **Auto-Regressive (AR)** refers to a **model where future values depend
 An **Auto-Regressive (AR) model** assumes that the value of a time series at time **t** depends on its previous values (**lags**).  
 
 ### **Mathematical Definition:**
-\[
-Y_t = c + \phi_1 Y_{t-1} + \phi_2 Y_{t-2} + ... + \phi_p Y_{t-p} + \epsilon_t
-\]
+
+$Y_t = c + \phi_1 Y_{t-1} + \phi_2 Y_{t-2} + ... + \phi_p Y_{t-p} + \epsilon_t$
+
 where:  
 - \( Y_t \) = Value at time **t**  
 - \( c \) = Constant term  
