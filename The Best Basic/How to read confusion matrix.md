@@ -38,7 +38,7 @@ Using values **TP, TN, FP, FN**, we calculate:
 
 #### ✅ **Accuracy** (Overall correctness)
 
-${Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}%
+${Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$
 
 **Good for balanced datasets.**  
 **Issue:** Can be misleading for imbalanced data.
