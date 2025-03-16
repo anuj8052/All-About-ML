@@ -15,7 +15,7 @@ where:
 - $(Y_t\)$ = Value at time **t**  
 - $(c)$ = Constant term  
 - $(\phi_i\)$ = Coefficients for previous values  
-- $(\p\)$ = Number of lags  
+- $(p\)$ = Number of lags  
 - $(\epsilon_t\)$ = White noise (random error)  
 
 #### **Example: AR(1) Model** (depends only on the last time step)
