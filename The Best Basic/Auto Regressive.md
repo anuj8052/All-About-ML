@@ -12,16 +12,16 @@ An **Auto-Regressive (AR) model** assumes that the value of a time series at tim
 $Y_t = c + \phi_1 Y_{t-1} + \phi_2 Y_{t-2} + ... + \phi_p Y_{t-p} + \epsilon_t$
 
 where:  
-- \( Y_t \) = Value at time **t**  
-- \( c \) = Constant term  
-- \( \phi_i \) = Coefficients for previous values  
-- \( p \) = Number of lags  
-- \( \epsilon_t \) = White noise (random error)  
+- $(Y_t)$ = Value at time **t**  
+- $(c)$ = Constant term  
+- $(phi_i)$ = Coefficients for previous values  
+- $(p)$ = Number of lags  
+- $(epsilon_t)$ = White noise (random error)  
 
 #### **Example: AR(1) Model** (depends only on the last time step)
-\[
-Y_t = c + \phi Y_{t-1} + \epsilon_t
-\]
+
+$Y_t = c + \phi Y_{t-1} + \epsilon_t$
+
 - If **ϕ = 0.8**, then **80% of today’s value comes from yesterday’s value**.
 
 #### **Real-World Example:**  
@@ -40,10 +40,10 @@ In **Natural Language Processing (NLP)**, an **auto-regressive model** generates
   - Predicts **one pixel at a time** based on previous pixels.
 
 ### **How It Works in NLP?**
-At step \( t \), the probability of the next word/token is:
-\[
-P(w_t | w_1, w_2, ..., w_{t-1})
-\]
+At step $(t)$, the probability of the next word/token is:
+
+$P(w_t | w_1, w_2, ..., w_{t-1})$
+
 - The model **sequentially generates text** instead of predicting all tokens at once.
 
 ### **Example: GPT-3 Text Generation**
