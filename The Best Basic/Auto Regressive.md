@@ -12,11 +12,11 @@ An **Auto-Regressive (AR) model** assumes that the value of a time series at tim
 $Y_t = c + \phi_1 Y_{t-1} + \phi_2 Y_{t-2} + ... + \phi_p Y_{t-p} + \epsilon_t$
 
 where:  
-- $(Y_t)$ = Value at time **t**  
-- $(c)$ = Constant term  
-- $(phi_i)$ = Coefficients for previous values  
-- $(p)$ = Number of lags  
-- $(epsilon_t)$ = White noise (random error)  
+- $(\Y_t\)$ = Value at time **t**  
+- $(\c\)$ = Constant term  
+- $(\phi_i\)$ = Coefficients for previous values  
+- $(\p\)$ = Number of lags  
+- $(\epsilon_t\)$ = White noise (random error)  
 
 #### **Example: AR(1) Model** (depends only on the last time step)
 
