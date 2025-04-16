@@ -173,14 +173,13 @@ $$
 ### **8. ELU (Exponential Linear Unit)**
 - **Formula**:  
   
-  $$
-  f(x) = \begin{cases}
-  x & \text{if } x > 0 \\
-  \alpha(e^x - 1) & \text{if } x \leq 0
-  \end{cases}
-  $$
-
-  
+$$
+f(x) = \begin{cases}
+x & \text{if } x > 0 \\
+\alpha(e^x - 1) & \text{if } x \leq 0
+\end{cases}
+$$
+ 
   $(\alpha\)$ is a hyperparameter, usually set to 1)
 - **Range**: (-\(\alpha\), ∞)  
 - **Explanation**:
