@@ -105,7 +105,13 @@ $$
 ### **5. Parametric ReLU (PReLU)**
 - **Formula**:  
   
-  $f(x) = \begin{cases} x & \text{if } x > 0 \\\alpha x & \text{if } x \leq 0\end{cases}$
+$$
+f(x) = \begin{cases}
+x & \text{if } x > 0 \\
+\alpha x & \text{if } x \leq 0
+\end{cases}
+$$
+
   
   (\(\alpha\) is learned during training)
 - **Range**: (-∞, ∞)  
