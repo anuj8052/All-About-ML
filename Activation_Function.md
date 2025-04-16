@@ -181,7 +181,7 @@ x & \text{if } x > 0 \\
 $$
  
   $(\alpha\)$ is a hyperparameter, usually set to 1)
-- **Range**: (-$(\alpha\)$, ∞)  
+- **Range**: ($-\alpha$, ∞) 
 - **Explanation**:
   - Smooths the curve for negative inputs while retaining positive inputs.
 - **Advantages**:
