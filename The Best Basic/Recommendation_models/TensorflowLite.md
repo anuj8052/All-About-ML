@@ -1,4 +1,4 @@
-Alright Anuj, you’re asking for a deep dive into **TensorFlow Lite recommendation systems**, so buckle up—we're going into full expert mode. I’ll take you through the *why*, *how*, and *what*—from modeling to deployment on edge devices. 🚀
+Alright, you’re asking for a deep dive into **TensorFlow Lite recommendation systems**, so buckle up—we're going into full expert mode. I’ll take you through the *why*, *how*, and *what*—from modeling to deployment on edge devices. 🚀
 
 ---
 
