@@ -173,13 +173,15 @@ $$
 ### **8. ELU (Exponential Linear Unit)**
 - **Formula**:  
   
-  $f(x) = 
+  $$
+  f(x) = 
   \begin{cases} 
   x & \text{if } x > 0 \\
   \alpha(e^x - 1) & \text{if } x \leq 0
-  \end{cases}$
+  \end{cases}
+  $$
   
-  (\(\alpha\) is a hyperparameter, usually set to 1)
+  $(\alpha\)$ is a hyperparameter, usually set to 1)
 - **Range**: (-\(\alpha\), ∞)  
 - **Explanation**:
   - Smooths the curve for negative inputs while retaining positive inputs.
