@@ -77,7 +77,13 @@ Activation functions play a crucial role in neural networks by introducing non-l
 ### **4. Leaky ReLU**
 - **Formula**:  
   
-  $f(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha x & \text{if } x \leq 0 \end{cases}$
+$$
+f(x) = \begin{cases}
+x & \text{if } x > 0 \\
+\alpha x & \text{if } x \leq 0
+\end{cases}
+$$
+
   
   (where $(\alpha\)$ is a small constant, e.g., 0.01)
 - **Range**: (-∞, ∞)  
