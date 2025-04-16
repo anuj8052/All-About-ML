@@ -116,7 +116,7 @@ $$
   ($(\alpha\)$ is learned during training)
 - **Range**: (-∞, ∞)  
 - **Explanation**:
-  - Similar to Leaky ReLU, but the slope of the negative part (\(\alpha\)) is learned dynamically.
+  - Similar to Leaky ReLU, but the slope of the negative part $(\alpha\)$ is learned dynamically.
 - **Advantages**:
   - Adaptive to different datasets.
 - **Disadvantages**:
