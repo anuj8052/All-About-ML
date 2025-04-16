@@ -113,7 +113,7 @@ x & \text{if } x > 0 \\
 $$
 
   
-  (\(\alpha\) is learned during training)
+  ($(\alpha\)$ is learned during training)
 - **Range**: (-∞, ∞)  
 - **Explanation**:
   - Similar to Leaky ReLU, but the slope of the negative part (\(\alpha\)) is learned dynamically.
